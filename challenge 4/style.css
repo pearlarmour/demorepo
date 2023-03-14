@@ -1,0 +1,119 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Grid CSS */
+#herogrid {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-rows: 75% 25%;
+  grid-template-columns: 75% 25%;
+  grid-template-areas:
+  "featuredProduct secondaryproject"
+  "featuredProduct CTA"
+}
+
+/* Category Grid CSS */
+#featuredProduct {
+  grid-area: featuredProduct;
+  background-image: url(https://i.pinimg.com/564x/a4/ec/cd/a4eccda7a840cd242be5134c46b38378.jpg);
+}
+
+#containergrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "toprow toprow toprow"
+  "leftsidebar rightcontent rightcontent";
+}
+
+#containergrid {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+/* Navigation CSS */
+/* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
+
+.navlinks navlinks{
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    transition: 0.8s;
+}
+
+.navbar navlinks a:hover {
+    color: #5a1111;
+}
+
+#navBar h1 {
+  font-size: 50pt;
+  width: 25%;
+  font-weight: 500;
+}
+#navigation {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#navigation p {
+  cursor: pointer;
+  text-decoration: none;
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+}
+.icons img {
+  border-radius: 50%;
+  width: 75px;
+  margin: 15px;
+  cursor: pointer;
+}
+.highlight {
+  color: #000000;
+  font-weight: 600;
+}
+
+/* Typography CSS */
+
+h2 {
+  padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  margin: 0px 0px;
+  font-weight: 1000;
+  color: #000000;
+}
+
+h4 {
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  font-size: 22px;
+}
+
+
+#headline p {
+  padding-left: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  max-width: 500px;
+  font-size: 60px;
+  font-weight: 300;
+  margin: 0px 0px;
+  color: #e8eedb;
+}
